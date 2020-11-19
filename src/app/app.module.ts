@@ -15,9 +15,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    MDBBootstrapModule.forRoot()
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+<div class="container main">
+  <div class="row flex-center">
+    <h1>數字的生成器</h1>
+  </div>
+
+  <div class="row flex-center">
+    1 ~ <label><input type="number" matInput [(ngModel)]="max" (ngModelChange)="gen()"></label>
+  </div>
+
+  <div class="row flex-center">
+    <button mdbBtn>測試</button>
+  </div>
+
+  <div class="row flex-center">
+    <h2>{{ output }}</h2>
+  </div>
+
+  <div class="row flex-center">
+    <button mat-button [cdkCopyToClipboard]="output">複製到剪貼簿</button>
+  </div>
+</div>
