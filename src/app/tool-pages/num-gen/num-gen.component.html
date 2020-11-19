@@ -4,11 +4,16 @@
   </div>
 
   <div class="row flex-center">
-    1 ~ <label><input type="number" matInput [(ngModel)]="max" (ngModelChange)="gen()"></label>
+    1 ~
+    <label>&nbsp;&nbsp;
+      <input style="text-align: center" type="number" matInput [(ngModel)]="max" (ngModelChange)="gen()">
+    </label>
   </div>
 
   <div class="row flex-center">
-    <button mdbBtn>測試</button>
+    <button style="margin: 0 3px" mat-stroked-button *ngFor="let i of [28, 29, 30, 31]" (click)="max=i; gen()">
+      {{ i }}天
+    </button>
   </div>
 
   <div class="row flex-center">
@@ -16,6 +21,6 @@
   </div>
 
   <div class="row flex-center">
-    <button mat-button [cdkCopyToClipboard]="output">複製到剪貼簿</button>
+    <button mat-stroked-button [cdkCopyToClipboard]="output">複製到剪貼簿</button>
   </div>
 </div>
