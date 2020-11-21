@@ -7,7 +7,9 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import {MatButtonModule} from '@angular/material/button';
-import {ButtonsModule} from 'angular-bootstrap-md';
+import {ButtonsModule, TableModule} from 'angular-bootstrap-md';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -19,7 +21,10 @@ import {ButtonsModule} from 'angular-bootstrap-md';
     FormsModule,
     ClipboardModule,
     MatButtonModule,
-    ButtonsModule
+    ButtonsModule,
+    TableModule,
+    MatRadioModule,
+    MatTooltipModule
   ]
 })
 export class ToolPagesModule { }

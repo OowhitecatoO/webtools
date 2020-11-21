@@ -6,3 +6,19 @@ input[type=number] {
   display: inline-block;
   width: 3em;
 }
+
+table.tt {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  border-collapse: separate;
+  text-align: right;
+  td {
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #575857;
+  }
+
+  thead + tr > td {
+    border: none;
+  }
+}

@@ -1,6 +1,6 @@
 <div class="container main">
   <div class="row flex-center">
-    <h1>數字的生成器</h1>
+    <h1>月曆數字的生成器</h1>
   </div>
 
   <div class="row flex-center">
@@ -16,11 +16,30 @@
     </button>
   </div>
 
+  <br>
   <div class="row flex-center">
-    <h2>{{ output }}</h2>
+    <mat-radio-group [(ngModel)]="startAt" (ngModelChange)="gen()">
+      <table class="tt col-6 col-12-sm" mdbTable>
+        <thead>
+        <tr>
+          <th *ngFor="let _ of [].constructor(7); index as i; first as first">
+            <mat-radio-button labelPosition="before" [value]="i" matTooltip="本月開始於一週的第{{i + 1}}天"
+                              matTooltipPosition="above">
+            </mat-radio-button>
+          </th>
+        </tr>
+        </thead>
+        <tr *ngFor="let row of display">
+          <td *ngFor="let d of row">{{ d }}</td>
+        </tr>
+      </table>
+    </mat-radio-group>
   </div>
+
+  <br>
 
   <div class="row flex-center">
     <button mat-stroked-button [cdkCopyToClipboard]="output">複製到剪貼簿</button>
+    <button style="margin-left: 5px;" mat-stroked-button (click)="nextMonth()">下個月</button>
   </div>
 </div>
