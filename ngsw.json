@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1605986196675,
+  "timestamp": 1606068643534,
   "index": "/webtools/index.html",
   "assetGroups": [
     {
@@ -109,7 +109,7 @@
     "/webtools/index.html": "a8adaf74e5de023a8bebcf7dd7039cb25caeee86",
     "/webtools/main-es2015.de64036b868413775a51.js": "3f8230e029a637d71776f6602cc63be7cc831486",
     "/webtools/main-es5.de64036b868413775a51.js": "ac47e0a8677dd0f842cb5b3e0eefd92063addd49",
-    "/webtools/manifest.webmanifest": "3db411f90570f4839bbda5699b600564c91726e0",
+    "/webtools/manifest.webmanifest": "67c0db2caa1dac50266459fb3fa7a8c4f375b85f",
     "/webtools/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/webtools/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
     "/webtools/runtime-es2015.80730c56cfe8e7c6532f.js": "27f3d151d8561741593abdf7e378d0c7a1abafcf",
